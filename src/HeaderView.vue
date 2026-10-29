@@ -9,6 +9,7 @@
             <nav class="navigation">
             <RouterLink to="/" class="nav-link">Home</RouterLink>
             <RouterLink to="/about" class="nav-link">About</RouterLink>
+            <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
             </nav>
         </header>
 </template>
