@@ -1,20 +1,18 @@
 <script setup>
 import HeaderView from './HeaderView.vue';
-
-
+import { useRoute } from 'vue-router';
+const route = useRoute();
 </script>
 
 <template>
-  <div class="app-layout">
-
+  <div v-if="route.path !== '/login'" class="app-layout">
     <HeaderView />
 
     <main class="main-content">
       <RouterView />
     </main>
-
   </div>
-  
+  <RouterView v-else />
 </template>
 
 <style scoped>

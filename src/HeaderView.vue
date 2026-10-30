@@ -1,17 +1,14 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-        <header class="topbar">
-            <div class="logo">MyApp</div>
-
-            <nav class="navigation">
-            <RouterLink to="/" class="nav-link">Home</RouterLink>
-            <RouterLink to="/about" class="nav-link">About</RouterLink>
-            <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
-            </nav>
-        </header>
+  <header class="topbar">
+    <div class="logo">MyApp</div>
+    <nav class="navigation">
+      <RouterLink to="/" class="nav-link">Home</RouterLink>
+      <RouterLink to="/about" class="nav-link">About</RouterLink>
+      <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
+    </nav>
+  </header>
 </template>
 
 <style>
