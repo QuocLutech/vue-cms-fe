@@ -1,8 +1,7 @@
 <script setup>
-import HeaderView from './HeaderView.vue';
-import { useAuthStore } from './store/auth.js';
+import HeaderView from './HeaderView.vue'
+import { useAuthStore } from './store/auth.js'
 const authStore = useAuthStore()
-
 </script>
 
 <template>
@@ -12,6 +11,4 @@ const authStore = useAuthStore()
   </main>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
