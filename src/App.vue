@@ -1,13 +1,12 @@
 <script setup>
 import HeaderView from './HeaderView.vue';
-import { useRoute } from 'vue-router';
-
-const route = useRoute();
+import { useAuthStore } from './store/auth.js';
+const authStore = useAuthStore()
 
 </script>
 
 <template>
-  <HeaderView v-if="route.path !== '/login'" />
+  <HeaderView v-if="authStore.isLoggedIn" />
   <main class="main-content">
     <RouterView />
   </main>
